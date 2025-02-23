@@ -1,8 +1,13 @@
 import admin from "firebase-admin";
-import serviceAccount from "../firebase-admin-sdk.json" assert { type: "json" };
+import fs from "fs";  
+import { Buffer } from "buffer";
+
+const firebaseAdminSdkBase64 = process.env.FIREBASE_ADMIN_SDK;
+const firebaseAdminSdkJson = Buffer.from(firebaseAdminSdkBase64, 'base64').toString('utf-8');
+fs.writeFileSync('./firebase-admin-sdk.json', firebaseAdminSdkJson);
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.cert("../firebase-admin-sdk.json"),
 });
 export const verifyIdToken = async (idToken) => {
   try {
