@@ -17,7 +17,7 @@ build/
 out/
 coverage/
 
-Backen/src/firebase-admin-sdk.json
+Backend/src/firebase-admin-sdk.json
 
 # Environment variables
 .env
