@@ -37,7 +37,7 @@ const Dashboard = () => {
 
   return (
     <div className='md:ml-64 p-10 bg-slate-200' >
-        <div className='bg-[url(banner.jpg)] bg-cover bg-center rounded-lg'>
+        <div className='bg-[url(/banner.jpg)] bg-cover bg-center rounded-lg'>
 
         <div className='h-[400px] bg-[#0c0b0bc7] flex items-center justify-center rounded-lg'>
             <div className='px-5 mx-7 bg-[#101010a8] rounded-lg py-4 flex flex-col gap-3'>
