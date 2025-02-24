@@ -29,7 +29,7 @@ const userLogin = async (req , res) => {
 
         
     } catch (error) {
-        console.error('User login failed:', error.message);
+        console.error('User login failed:', error);
         return res.status(500).json({error : 'Server error'});
     }
 }
