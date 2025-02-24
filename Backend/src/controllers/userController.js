@@ -20,7 +20,7 @@ const userLogin = async (req , res) => {
         const newUser = new User({
             uid,
             name,
-            refferalCode : generateReferralCode()
+            referralCode : generateReferralCode()
         });
 
         await newUser.save();
