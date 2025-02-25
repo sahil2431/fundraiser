@@ -30,7 +30,7 @@ const Sidebar = ({isSideOpen , close}) => {
   } , [isSideOpen])
 
   return (
-    <div className={`w-64 h-screen bg-white border-r flex flex-col fixed ${isOpen ? 'max-md:left-0' : 'max-md:left-[-200px]'} top-0 z-20 transition-all duration-300 ease-in-out`}>
+    <div className={`w-64 h-screen bg-white border-r flex flex-col fixed ${isOpen ? 'max-md:left-0' : 'max-md:left-[-250px]'} top-0 z-20 transition-all duration-300 ease-in-out`}>
 
       <div className="flex items-center justify-center gap-5 h-16 border-b">
         <div className="text-2xl font-bold text-blue-500 border border-blue-400 px-4 py-1 rounded">Logo</div>
